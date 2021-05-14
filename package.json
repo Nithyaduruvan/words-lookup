@@ -1,0 +1,34 @@
+{
+  "name": "words-lookup",
+  "version": "1.0.0",
+  "description": "Lookup dictionary to find matching words based on search criteria",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nithyaduruvan/words-lookup.git"
+  },
+  "keywords": [
+    "dictionary",
+    "wordsearch",
+    "wordslookup"
+  ],
+  "author": "Chidambaram,Nithyaduruvan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nithyaduruvan/words-lookup/issues"
+  },
+  "homepage": "https://github.com/Nithyaduruvan/words-lookup#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
